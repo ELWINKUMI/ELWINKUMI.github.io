@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emmalord Educational Complex offers comprehensive educational programs. Learn more about our admission process and academic offerings.">
+    <meta name="keywords" content="Emmalord Educational Complex, education, admission, academic offerings Emmalord, Emmalord Complex">
+    <meta name="google-site-verification" content="a0e44e2b09e0f641">
+    <meta name="author" content="Elwin Kumi Obrempong" href="https://wa.link/e8vuh7">
+    <meta name="google-site-verification" content="a0e44e2b09e0f641">
+    <meta name="robots" content="index, follow">
+    <title>Emmalord Educational Complex</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style">
+    <link rel="preload" href="images/logo.png" as="image">
+    <link rel="preload" href="images/4.jpg" as="image">
+    <link rel="preload" href="images/8.jpg" as="image">
+    <link rel="preload" href="resources/STUDENT HANDBOOK.pdf" as="document">
+    <link rel="preload" href="forms/financialAid.pdf" as="document">
+    <link rel="preload" href="forms/STUDENT APPLICATION FORM.pdf" as="document">
+    <link rel="preload" href="forms/health_record.pdf" as="document">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="datetime" id="datetime">
+                <p class="date" id="date"></p>
+                <p class="time" id="time"></p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/YourPage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/YourProfile" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/YourProfile" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-bar" id="nav-bar">
+        <div class="container">
+            <a href="#home" class="school-logo-link" id="homeLink">
+                <div class="school-logo">
+                    <img src="images/logo.png" alt="School Logo">
+                    <span class="school-name">Emmalord Educational Complex</span>
+                </div>
+            </a>
+            <span class="hamburger" id="hamburger">&#9776;</span>
+            <ul id="menu">
+                <span class="close-btn" id="close-btn"></span>
+                <li><a href="#home"><i class="fas fa-home" aria-hidden="true"></i> HOME</a></li>
+                <li class="dropdown">
+                    <a href="#about" class="dropbtn">ABOUT US <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#staffs">Staff</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#students">Students</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#academics" class="dropbtn">ACADEMICS <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#news">News</a>
+                        <a href="#calendar">Calendar</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#admission" class="dropbtn">ADMISSION <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#admission">Requirements & Procedure</a>
+                        <a href="#application-forms">Application Forms</a>
+                    </div>
+                </li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-slideshow">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/11.jpg" alt="Slide 1">
+                <div class="overlay"></div>
+                <div class="caption">Cutting-edge Learning Spaces</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/8.jpg" alt="Slide 2">
+                <div class="overlay"></div>
+                <div class="caption">Engaging classroom environments</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/5.jpg" alt="Slide 3">
+                <div class="overlay"></div>
+                <div class="caption">Diverse extracurricular activities</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/4.jpg" alt="Slide 4">
+                <div class="overlay"></div>
+                <div class="caption" style="font-size: 18px;">Dedicated and experienced faculty</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/2.jpg" alt="Slide 5">
+                <div class="overlay"></div>
+                <div class="caption" style="font-size: 18px;">Promoting a culture of excellence</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/6.jpg" alt="Slide 6">
+                <div class="overlay"></div>
+                <div class="caption">Empowering through Sports Excellence</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/logo.png" alt="Slide 7">
+                <div class="overlay"></div>
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+       let slideIndex = 0;
+let slides, dots, slideInterval;
+
+function showSlides(n) {
+    let i;
+    slides = document.getElementsByClassName("slide");
+    dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    slideInterval = setTimeout(() => showSlides(slideIndex += 1), 3000); // Change image every 3 seconds
+}
+
+function plusSlides(n) {
+    clearTimeout(slideInterval);
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    clearTimeout(slideInterval);
+    showSlides(slideIndex = n);
+}
+
+showSlides(slideIndex);
+
+    </script>
+
+
+
+<style>
+ * { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; }
+.hero-slideshow { position: relative; max-width: 100%; margin: auto; }
+.slideshow-container { position: relative; }
+.slide { display: none; position: relative; }
+.slide img { width: 100%; height: 500px; object-fit: cover; }
+.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(68, 67, 67, 0.3); } /* Default for larger screens */
+.fade { animation-name: fade; animation-duration: 1.5s; }
+@keyframes fade { from {opacity: .4} to {opacity: 1} }
+.dot-container { position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; justify-content: center; align-items: center; }
+.dot { cursor: pointer; height: 15px; width: 15px; margin: 0 5px; background-color: rgba(255, 255, 255, 0.5); border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; }
+.active, .dot:hover { background-color: rgba(255, 255, 255, 1); }
+.prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -22px; color: white; font-weight: bold; font-size: 18px; transition: 0.6s ease; user-select: none; z-index: 2; }
+.prev { left: 0; border-radius: 3px 0 0 3px; }
+.next { right: 0; border-radius: 0 3px 3px 0; }
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+.caption { 
+    color: #f2f2f2; 
+    font-size: 30px; 
+    padding: 8px 20px; 
+    position: absolute; 
+    bottom: 80px; 
+    width: auto; 
+    max-width: 80%; 
+    text-align: center; 
+    z-index: 2; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+@media only screen and (max-width: 600px) {
+    .caption { 
+        font-size: 15px; 
+        padding: 8px 10px; 
+        bottom: 40px; 
+        width: auto; 
+        max-width: 90%; 
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+    .slide img { width: 100%; height: 300px; object-fit: cover; }
+    .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); }
+
+}
+@keyframes fly {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(50px) translateY(-30px); }
+            100% { transform: translateX(100px) translateY(0); opacity: 0; }
+        }
+
+        /* Class to trigger the fly animation */
+        .fly-icon {
+            animation: fly 1s forwards;
+        }
+</style>
+    <section class="home" id="home">
+        <div class="container">
+            <div class="home-content">
+                <h1 id="welcome-message"></h1>
+                <p >Empowering minds, shaping futures. At Emmalord Educational Complex, we provide a nurturing and inclusive environment where students excel academically, socially, and personally. Our state-of-the-art facilities, dedicated staff, and diverse programs ensure a well-rounded education for all. We focus on individual growth, fostering a love for learning, and preparing students for a successful future.</p>
+                
+                <div class="highlights">
+                    <h2 style=" margin-top: 30px;">Why Choose Emmalord?</h2>
+                    <div class="highlight-grid">
+                        <div class="highlight-item">
+                            <div class="highlight-front">
+                                <i class="fas fa-book-open"></i>
+                                <h3>Comprehensive Curriculum</h3>
+                                <p>Tailored programs to meet diverse learning needs</p>
+                            </div>
+                            <div class="highlight-back">
+                                <h3>Comprehensive Curriculum Details</h3>
+                                <p>Our curriculum is designed to cater to students with different learning needs, providing a comprehensive and tailored educational experience.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-front">
+                                <i class="fas fa-futbol"></i>
+                                <h3>Sports</h3>
+                                <p>Comprehensive sports program to promote physical health and teamwork</p>
+                            </div>
+                            <div class="highlight-back">
+                                <h3>Sports Details</h3>
+                                <p>Our comprehensive sports program includes various activities such as soccer, basketball, athletics, and more. We aim to promote physical health, teamwork, and discipline among students, encouraging them to develop both their physical and social skills.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-front">
+                                <i class="fas fa-globe"></i>
+                                <h3>Our Culture</h3>
+                                <p>Embracing and celebrating Ghanaian culture and traditions</p>
+                            </div>
+                            <div class="highlight-back">
+                                <h3>Our Culture Details</h3>
+                                <p>We are proud of our rich Ghanaian heritage and incorporate cultural education into our curriculum. Students engage in traditional music, dance, and art, and participate in festivals and events that celebrate Ghanaian traditions. This helps them appreciate their roots and understand the importance of cultural diversity and identity.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-front">
+                                <i class="fas fa-palette"></i>
+                                <h3>Arts and Creativity</h3>
+                                <p>Encouraging artistic expression and creative thinking</p>
+                            </div>
+                            <div class="highlight-back">
+                                <h3>Arts and Creativity Details</h3>
+                                <p>Our arts program includes visual arts, music, drama, and dance, providing students with various opportunities to express themselves creatively. We believe in nurturing the creative talents of our students and helping them to explore their artistic potential through diverse mediums and performances.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                <div class="highlight-front">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Expert Faculty</h3>
+        <p>Dedicated and highly qualified teaching staff</p>
+    </div>
+    <div class="highlight-back">
+        <h3>Eypert Faculty Details</h3>
+        <p>Our teachers are passionate educators with advanced degrees and years of eyperience in their fields. They are committed to nurturing each student's potential, providing personalized attention, and using innovative teaching methods. Faculty members regularly participate in professional development to stay updated with the latest educational trends and practices, ensuring they bring the best knowledge and techniques to the classroom. Their dedication extends beyond the classroom, as they mentor students and guide them in their academic and personal growth.</p>
+    </div>
+</div>
+
+<div class="highlight-item">
+    <div class="highlight-front">
+        <i class="fas fa-globe-americas"></i>
+        <h3>Global Perspective</h3>
+        <p>Curriculum designed to foster international awareness</p>
+    </div>
+    <div class="highlight-back">
+        <h3>Global Perspective Details</h3>
+        <p>We incorporate global themes into our lessons, organize cultural exchange programs, and encourage students to think critically about world issues. Our curriculum includes studying different cultures, languages, and international affairs, aiming to develop students into well-rounded global citizens. Through partnerships with schools and organizations worldwide, we provide students with opportunities to participate in international projects and exchange programs. This exposure helps them appreciate diversity, understand global challenges, and develop skills to contribute positively to a globally interconnected world.</p>
+    </div>
+</div>
+
+<div class="highlight-item">
+    <div class="highlight-front">
+        <i class="fas fa-microscope"></i>
+        <h3>STEM Focus</h3>
+        <p>Strong emphasis on Science, Technology, Engineering, and Math</p>
+    </div>
+    <div class="highlight-back">
+        <h3>STEM Focus Details</h3>
+        <p>Our STEM program features advanced labs, coding classes, robotics clubs, and partnerships with local tech companies to prepare students for future careers. We offer a hands-on learning approach where students engage in experiments, projects, and real-world problem-solving activities. By integrating STEM into everyday learning, we aim to develop critical thinking, creativity, and innovation skills. Our partnerships with tech companies and universities provide students with unique internship opportunities, guest lectures, and workshops, exposing them to the latest technological advancements and career pathways in STEM fields.</p>
+    </div>
+</div>
+
+<div class="highlight-item">
+    <div class="highlight-front">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Community Service</h3>
+        <p>Opportunities for students to give back to society</p>
+    </div>
+    <div class="highlight-back">
+        <h3>Community Service Details</h3>
+        <p>We organize regular volunteer activities, charity drives, and community outreach programs to instill a sense of social responsibility in our students. Through these initiatives, students learn the value of empathy, compassion, and civic duty. They engage in projects such as environmental clean-ups, tutoring underprivileged children, and supporting local shelters and food banks. Our community service program not only benefits the society but also helps students develop leadership skills, teamwork, and a deeper understanding of societal issues. We believe in fostering a culture of giving back, ensuring students carry these values throughout their lives.</p>
+    </div>
+</div>
+
+                </div>
+                
+                <div class="statistics">
+                    <div class="stat-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3 class="stat-number" data-target="300">0</h3>
+                        <p>Students Enrolled</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3 class="stat-number" data-target="50">0</h3>
+                        <p>Expert Teachers</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-smile"></i>
+                        <h3 class="stat-number" data-target="98">0</h3>
+                        <span>%</span>
+                        <p>Parent Satisfaction</p>
+                    </div>
+                </div>
+                
+                <div class="cta">
+                    <a href="#admission" class="cta-button">Explore Admissions</a>
+                    <a href="#about" class="cta-button secondary">Read More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Emmalord Educational Complex is committed to providing a world-class education that nurtures intellectual curiosity, fosters personal growth, and prepares students for success in a rapidly changing world. Our dedicated staff, state-of-the-art facilities, and comprehensive curriculum work together to create an inspiring learning environment.</p>
+        </div>
+    </section>
+
+    <section id="staffs" class="staffs">
+        <div class="container staffs">
+            <h1>Our Staff</h1>
+            <p style="text-align: left;">Our dedicated and experienced staff at Emmalord Educational Complex is committed to providing a nurturing and inclusive learning environment for our students. With a passion for education and a focus on student success, our staff members go above and beyond to ensure that each student receives the support and guidance they need to excel academically and personally. From our principal to our vice principals, our staff is dedicated to creating a positive and engaging educational experience for all. With their expertise and dedication, our staff plays a crucial role in shaping the future of our students and preparing them for success in a rapidly changing world.</p>
+            <div class="staff-grid">
+                <div class="column">
+                    <div class="staff-card">
+                        <img src="images/HEAD.png" alt="John Doe">
+                        <h3>STAFF 1</h3>
+                        <p>POSITION </p>
+                        <a href="mailto:brempongkumi1@gmail.com">Email</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="staff-card">
+                        <img src="images/HEAD.png" alt="John Doe">
+                        <h3>STAFF 2</h3>
+                        <p>POSITION </p>
+                        <a href="mailto:brempongkumi1@gmail.com">Email</a>
+                  </div>
+                </div>
+                <div class="column">
+                    <div class="staff-card">
+                        <img src="images/HEAD.png" alt="John Doe">
+                        <h3>STAFF 3</h3>
+                        <p>POSITION </p>
+                        <a href="mailto:brempongkumi1@gmail.com">Email</a>
+                  </div>
+                </div>
+                <div class="column">
+                    <div class="staff-card">
+                        <img src="images/HEAD.png" alt="John Doe">
+                        <h3>STAFF 4</h3>
+                        <p>POSITION </p>
+                        <a href="mailto:brempongkumi1@gmail.com">Email</a>
+                   </div>
+                </div>
+                <div class="column">
+                    <div class="staff-card">
+                        <img src="images/HEAD.png" alt="John Doe">
+                        <h3>STAFF 5</h3>
+                        <p>POSITION </p>
+                        <a href="mailto:brempongkumi1@gmail.com">Email</a>
+                  </div>
+                </div>
+                <div class="column">
+                    <div class="staff-card">
+                        <img src="images/HEAD.png" alt="John Doe">
+                        <h3>STAFF 6</h3>
+                        <p>POSITION </p>
+                        <a href="mailto:brempongkumi1@gmail.com">Email</a>
+                  </div>
+                </div>
+                <div class="column">
+                    <div class="staff-card">
+                        <img src="images/HEAD.png" alt="John Doe">
+                        <h3>STAFF 7</h3>
+                        <p>POSITION </p>
+                        <a href="mailto:brempongkumi1@gmail.com">Email</a>
+                   </div>
+                </div>
+                <div class="column">
+                    <div class="staff-card">
+                        <img src="images/11340489.jpg" alt="John Doe">
+                        <h3>Mr. Obrempong Kumi Elwin</h3>
+                        <p>DIRECTOR</p>
+                        <a href="mailto:brempongkumi1@gmail.com">brempongkumi1@gmail.com</a>
+                    </div>
+                </div>
+                <!-- Add more staff cards as needed -->
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>Explore our campus, classrooms, and extracurricular activities through our photo gallery. Our state-of-the-art facilities provide a vibrant and engaging learning environment for our students, while our extracurricular programs offer opportunities for personal growth and development.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/10.jpg" alt="Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/5.jpg" alt="Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/4.jpg" alt="Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/8.jpg" alt="Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/4.jpg" alt="Image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/8.jpg" alt="Image 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/4.jpg" alt="Image 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/8.jpg" alt="Image 8">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="students" class="students">
+        <div class="container">
+            <h1>Our Students</h1>
+            <p>At Emmalord, we celebrate the diversity and achievements of our student body. Our students come from various backgrounds and contribute to a vibrant, inclusive community. Here, every student is encouraged to explore their passions, develop their talents, and reach their full potential.</p>
+        </div>
+    </section>
+    <section id="student-life" class="student-life">
+        <div class="container">
+            <h1>Student Life</h1>
+            <p>At Emmalord Educational Complex, we offer a wide range of student activities, clubs, and events to enrich the educational experience. From sports teams to academic clubs, there is something for everyone. Our students have the opportunity to participate in:</p>
+            <ul>
+                <li>Sports Teams</li>
+                <li>Music and Arts Clubs</li>
+                <li>Science and Technology Clubs</li>
+                <li>Community Service Projects</li>
+                <li>Student Government</li>
+                <li>Cultural Events</li>
+                <li>Field Trips and Excursions</li>
+            </ul>
+            <p>These activities help students develop leadership skills, make new friends, and enhance their overall school experience.</p>
+        </div>
+    </section>
+    
+    <section id="academics" class="academics">
+        <div class="container">
+            <h1>Academics</h1>
+            <p>At our school, we help students learn and grow. We teach important subjects like reading, writing, and math. We also encourage students to be creative, think carefully, and solve problems. This helps prepare them for their future.</p>
+        </div>
+    </section>
+
+    <section id="news" class="news">
+        <div class="container">
+            <h1>Latest News</h1>
+            <div class="news-grid">
+                <div class="news-item">
+                    <h3>Annual Science Fair Winners Announced</h3>
+                    <p>Date: May 15, 2023</p>
+                    <p>Our students showcased impressive projects at this year's Science Fair...</p>
+                </div>
+                <div class="news-item">
+                    <h3>New Computer Lab Inaugurated</h3>
+                    <p>Date: April 3, 2023</p>
+                    <p>We're excited to announce the opening of our state-of-the-art computer lab...</p>
+                </div>
+                <!-- Add more news items as needed -->
+            </div>
+        </div>
+    </section>
+    <section id="calendar" class="calendar">
+        <div class="container">
+            <h1>Academic Calendar</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Event</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>September</td>
+                        <td>First Day of School</td>
+                        <td>September 5, 2023</td>
+                    </tr>
+                    <tr>
+                        <td>August</td>
+                        <td>Graduation</td>
+                        <td>August 5, 2024</td>
+                    </tr>
+                    <tr>
+                        <td>December</td>
+                        <td>Holiday/Vacation</td>
+                        <td>December 23, 2023 - January 3, 2024</td>
+                    </tr>
+                    <tr>
+                        <td>September</td>
+                        <td>School Resumes</td>
+                        <td>September 24, 2024</td>
+                    </tr>
+                    <tr>
+                        <td>October</td>
+                        <td>PTA Meeting</td>
+                        <td>October 15, 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+   
+
+    <section id="resources" class="resources">
+        <div class="container">
+            <h1>Resources</h1>
+            <p>We provide a variety of resources to support the educational journey of our students and parents:</p>
+            <p>Our library offers a wide range of books, magazines, and online databases for research and leisure reading.</p>
+            <p>The computer lab is equipped with the latest technology and software for students to enhance their digital skills.</p>
+            <p>We have a dedicated parent-teacher association that fosters collaboration and communication between parents and teachers.</p>
+            <p>We have a dedicated team of staff members who are always ready to assist students and parents with any questions or concerns.</p>
+            <ul>
+                <li><a href="resources/STUDENT HANDBOOK.pdf">Student Handbook</a></li>
+                <li><a href="forms/financialAid.pdf">Financial Aid Information</a></li>
+            </ul>
+            <p class="coming-soon">Other resources will be uploaded soon.</p>
+        </div>
+    </section>
+
+    <section class="admission" id="admission">
+    <div class="admissions-container">
+        <h1 class="admissions-title">Admissions</h1>
+        <p class="admissions-description">
+            We welcome applications from students who are eager to learn and grow in our supportive educational environment. Our admission process is designed to ensure that we can meet the needs of each student and that they will thrive in our community.</p>
+        <h2 class="requirements-title">Admission Requirements & Procedure</h2>
+        <ol class="requirements-list">
+            <li><span class="requirement-number">1</span><span class="requirement-text">Complete the online application form</span></li>
+            <li><span class="requirement-number">2</span><span class="requirement-text">Submit required documents (birth certificate, previous school records)</span></li>
+            <li><span class="requirement-number">3</span><span class="requirement-text">Pay the application fee</span></li>
+            <li><span class="requirement-number">4</span><span class="requirement-text">Schedule an interview and assessment</span></li>
+            <li><span class="requirement-number">5</span><span class="requirement-text">Receive admission decision</span></li>
+        </ol>
+    </div>
+</section>
+    <section id="application-forms" class="application-forms">
+        <div class="container">
+            <h1>Application Forms</h1>
+            <p>To start your application process, please download and fill out the following forms:</p>
+            <ul>
+                <li><a href="forms/STUDENT APPLICATION FORM.pdf">Student Application Form</a></li>
+                <li><a href="forms/health_record.pdf">Health Record Form</a></li>
+                <li><a href="forms/recommendation.pdf">Recommendation Form</a></li>
+                <li><a href="resources/STUDENT HANDBOOK.pdf">Student Handbook</a></li>
+            </ul>
+        </div>
+    </section>
+
+   <footer class="contact" id="contact">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Bono Region, Sunyani-Dumasua</p>
+                <p><i class="fas fa-phone-alt"></i> (+233) 50-882-9657</p>
+                <p><i class="far fa-envelope"></i> <a href="mailto:brempongkumi1@gmail.com">brempongkumi1@gmail.com</a></p>
+            </div>
+            <div class="footer-section quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#academics"><i class="fas fa-graduation-cap"></i> Academics</a></li>
+                    <li><a href="#admission"><i class="fas fa-user-plus"></i> Admissions</a></li>
+                    <li><a href="#news"><i class="far fa-newspaper"></i> News</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-links">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-section message-form">
+                <h4>Send Us a Message</h4>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" id="submit-btn">
+                        Send Message
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Emmalord Educational Complex. All Rights Reserved. | Powered by <a href="https://wa.link/e8vuh7">360 Tech</a></p>
+    </div>
+</footer>
+    
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
